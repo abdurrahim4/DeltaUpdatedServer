@@ -1,0 +1,58 @@
+import express from 'express';
+import cors from 'cors';
+import helmet from 'helmet';
+import rateLimit from 'express-rate-limit';
+import bcrypt from 'bcryptjs';
+import crypto from 'node:crypto';
+import {z} from 'zod';
+import {list,mutate} from './repositories/jsonStore.js';
+import {auth,access,manager,tokenFor} from './middleware/auth.js';
+import {createOrder,changeStatus,OrderError} from './services/orders.js';
+const wrap=fn=>(req,res,next)=>Promise.resolve(fn(req,res,next)).catch(next);
+const fail=(status,message)=>{throw new OrderError(message,status);};
+const page=(rows,req)=>{const limit=Math.min(100,Math.max(1,Number(req.query.limit)||20)),offset=Math.max(0,Number(req.query.offset)||0);return {data:rows.slice(offset,offset+limit),pagination:{total:rows.length,limit,offset}};};
+const text=z.string().trim().min(1).max(250);
+const productSchema=z.object({name:z.record(z.string()).refine(o=>!!o.pl||!!o.en),description:z.record(z.string()).default({}),categoryId:text,price:z.number().finite().min(0).max(100000),available:z.boolean().default(true),imageUrl:z.string().max(2000).default(''),customizationGroupIds:z.array(z.string()).default([]),sortOrder:z.number().int().default(0)});
+const orderSchema=z.object({branchId:text,customer:z.object({name:text,phone:text,address:text}),items:z.array(z.object({productId:text,quantity:z.number().int().min(1).max(30),selections:z.record(z.array(z.string())).optional(),instructions:z.string().max(500).optional()})).min(1).max(40),paymentMethod:z.enum(['cash_on_delivery','card_on_delivery']),idempotencyKey:z.string().min(8).max(120).optional()});
+const settingsSchema=z.object({available:z.boolean().optional(),hours:z.object({open:z.string().regex(/^\d\d:\d\d$/),close:z.string().regex(/^\d\d:\d\d$/)}).optional(),phone:z.string().max(40).optional()});
+export function createApp(io){
+ const app=express();app.disable('x-powered-by');app.use(helmet());
+ app.use(cors());
+ app.use('/api',rateLimit({windowMs:60000,limit:240,standardHeaders:'draft-7',legacyHeaders:false}));
+ app.get('/health',(_q,r)=>r.json({status:'ok',storage:'local-json'}));
+ app.post('/api/v1/auth/login',rateLimit({windowMs:60000,limit:10}),wrap(async(req,res)=>{
+  const {email,password}=z.object({email:z.string().email(),password:z.string().min(1)}).parse(req.body);
+  const users=await list('users');const user=users.find(u=>u.email.toLowerCase()===email.toLowerCase()&&u.active);
+  if(!user||!await bcrypt.compare(password,user.passwordHash))fail(401,'Invalid credentials');
+  res.json({data:{token:tokenFor(user),user:{id:user.id,email:user.email,role:user.role,branchIds:user.branchIds}}});
+ }));
+ app.get('/api/v1/auth/me',auth,wrap(async(req,res)=>{const user=(await list('users')).find(u=>u.id===req.user.sub&&u.active);if(!user)fail(401,'Account disabled');res.json({data:{id:user.id,email:user.email,role:user.role,branchIds:user.branchIds}});}));
+ app.get('/api/v1/restaurants',wrap(async(req,res)=>{let rows=await list('branches');if(req.query.city)rows=rows.filter(b=>b.city.toLowerCase().includes(String(req.query.city).toLowerCase()));if(req.query.search)rows=rows.filter(b=>(b.name+' '+b.city).toLowerCase().includes(String(req.query.search).toLowerCase()));if(req.query.available!==undefined)rows=rows.filter(b=>b.available===(req.query.available==='true'));res.json(page(rows,req));}));
+ app.get('/api/v1/restaurants/:id',wrap(async(req,res)=>{const b=(await list('branches')).find(b=>b.id===req.params.id);if(!b)fail(404,'Branch not found');res.json({data:b});}));
+ app.get('/api/v1/restaurants/:id/products',wrap(async(req,res)=>{let rows=(await list('products')).filter(p=>p.branchId===req.params.id&&!p.archived&&p.available);if(req.query.category)rows=rows.filter(p=>p.categoryId===req.query.category);if(req.query.search)rows=rows.filter(p=>Object.values(p.name).join(' ').toLowerCase().includes(String(req.query.search).toLowerCase()));res.json(page(rows.sort((a,b)=>a.sortOrder-b.sortOrder),req));}));
+ app.get('/api/v1/restaurants/:id/products/:productId',wrap(async(req,res)=>{const p=(await list('products')).find(p=>p.id===req.params.productId&&p.branchId===req.params.id&&!p.archived&&p.available);if(!p)fail(404,'Product not found');const groups=(await list('customization-groups')).filter(g=>p.customizationGroupIds.includes(g.id));res.json({data:{...p,customizationGroups:groups}});}));
+ app.get('/api/v1/restaurants/:id/categories',wrap(async(req,res)=>{const products=(await list('products')).filter(p=>p.branchId===req.params.id&&!p.archived);const ids=new Set(products.map(p=>p.categoryId));res.json({data:(await list('categories')).filter(c=>ids.has(c.id))});}));
+ app.get('/api/v1/restaurants/:id/customizations',wrap(async(req,res)=>res.json({data:await list('customization-groups')})));
+ app.post('/api/v1/orders',wrap(async(req,res)=>{const body=orderSchema.parse(req.body);const {order,created}=await createOrder(body,io);res.status(created?201:200).json({data:{...order,accessToken:undefined},created});}));
+ // Guest order lookup requires a secret generated at checkout. Existing orders are intentionally inaccessible to unauthenticated callers.
+ app.get('/api/v1/orders/:id',auth,wrap(async(req,res)=>{const o=(await list('orders')).find(o=>o.id===req.params.id);if(!o)fail(404,'Order not found');if(req.user.role!=='super_admin'&&!req.user.branchIds.includes(o.branchId))fail(403,'Access denied');res.json({data:o});}));
+ const branch='/api/v1/management/branches/:branchId';app.use(branch,auth,access);
+ app.get(branch+'/orders',wrap(async(req,res)=>{let rows=(await list('orders')).filter(o=>o.branchId===req.params.branchId);if(req.query.status)rows=rows.filter(o=>o.status===req.query.status);res.json(page(rows.sort((a,b)=>b.createdAt.localeCompare(a.createdAt)),req));}));
+ app.patch(branch+'/orders/:orderId/status',wrap(async(req,res)=>{const {status,reason}=z.object({status:z.enum(['preparing','delivering','delivered','cancelled']),reason:z.string().max(500).optional()}).parse(req.body);res.json({data:await changeStatus(req.params.branchId,req.params.orderId,status,reason,io)});}));
+ app.get(branch+'/products',wrap(async(req,res)=>{let rows=(await list('products')).filter(p=>p.branchId===req.params.branchId);if(req.query.search)rows=rows.filter(p=>Object.values(p.name).join(' ').toLowerCase().includes(String(req.query.search).toLowerCase()));if(req.query.archived!==undefined)rows=rows.filter(p=>p.archived===(req.query.archived==='true'));res.json(page(rows,req));}));
+ app.post(branch+'/products',manager,wrap(async(req,res)=>{const body=productSchema.parse(req.body);const p={...body,id:crypto.randomUUID(),branchId:req.params.branchId,currency:'PLN',archived:false};await mutate('products',rows=>rows.push(p));res.status(201).json({data:p});}));
+ app.patch(branch+'/products/:productId',manager,wrap(async(req,res)=>{const body=productSchema.partial().parse(req.body);const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');Object.assign(x,body);return structuredClone(x);});res.json({data:p});}));
+ app.delete(branch+'/products/:productId',manager,wrap(async(req,res)=>{const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');x.archived=true;return structuredClone(x);});res.json({data:p});}));
+ app.post(branch+'/products/:productId/restore',manager,wrap(async(req,res)=>{const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');x.archived=false;return structuredClone(x);});res.json({data:p});}));
+ app.patch(branch+'/products/:productId/availability',manager,wrap(async(req,res)=>{const {available}=z.object({available:z.boolean()}).parse(req.body);const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');x.available=available;return structuredClone(x);});res.json({data:p});}));
+ app.post(branch+'/products/:productId/duplicate',manager,wrap(async(req,res)=>{const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');const copy={...structuredClone(x),id:crypto.randomUUID(),archived:false};rows.push(copy);return copy;});res.status(201).json({data:p});}));
+ app.post(branch+'/products/:productId/copy',manager,wrap(async(req,res)=>{const {targetBranchId}=z.object({targetBranchId:text}).parse(req.body);if(req.user.role!=='super_admin'&&!req.user.branchIds.includes(targetBranchId))fail(403,'Target branch denied');const p=await mutate('products',rows=>{const x=rows.find(p=>p.id===req.params.productId&&p.branchId===req.params.branchId);if(!x)fail(404,'Product not found');const copy={...structuredClone(x),id:crypto.randomUUID(),branchId:targetBranchId,archived:false};rows.push(copy);return copy;});res.status(201).json({data:p});}));
+ app.patch(branch+'/bulk/products',manager,wrap(async(req,res)=>{const {ids,available,price}=z.object({ids:z.array(text).min(1).max(100),available:z.boolean().optional(),price:z.number().min(0).max(100000).optional()}).parse(req.body);const changed=await mutate('products',rows=>{const affected=rows.filter(p=>p.branchId===req.params.branchId&&ids.includes(p.id));for(const p of affected){if(available!==undefined)p.available=available;if(price!==undefined)p.price=price;}return affected.length;});res.json({data:{updated:changed}});}));
+ app.get(branch+'/settings',wrap(async(req,res)=>{const b=(await list('branches')).find(x=>x.id===req.params.branchId);res.json({data:b});}));
+ app.patch(branch+'/settings',manager,wrap(async(req,res)=>{const body=settingsSchema.parse(req.body);const b=await mutate('branches',rows=>{const x=rows.find(x=>x.id===req.params.branchId);if(!x)fail(404,'Branch not found');Object.assign(x,body);return structuredClone(x);});res.json({data:b});}));
+ app.get(branch+'/categories',wrap(async(req,res)=>res.json({data:await list('categories')})));
+ app.get(branch+'/customizations',wrap(async(req,res)=>res.json({data:await list('customization-groups')})));
+ app.use((_req,res)=>res.status(404).json({error:{code:'NOT_FOUND',message:'Route not found'}}));
+ app.use((err,_req,res,next)=>{if(res.headersSent)return next(err);if(err instanceof z.ZodError)return res.status(400).json({error:{code:'VALIDATION',details:err.flatten()}});const status=err.status||500;if(status>=500)console.error(err);res.status(status).json({error:{code:status===500?'INTERNAL_ERROR':'REQUEST_ERROR',message:status===500?'Internal server error':err.message}});});
+ return app;
+}

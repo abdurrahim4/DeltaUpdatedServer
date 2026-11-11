@@ -1,0 +1,152 @@
+[
+  {
+    "id": "kowale",
+    "restaurantId": "delta-kebab",
+    "name": "Kowale",
+    "city": "Gdańsk",
+    "address": "ul. Demo 1, Gdańsk, Polska",
+    "phone": "+48 500 000 000",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "gdansk",
+    "restaurantId": "delta-kebab",
+    "name": "Gdańsk Centrum",
+    "city": "Pruszcz Gdański",
+    "address": "ul. Demo 2, Pruszcz Gdański, Polska",
+    "phone": "+48 500 000 001",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "pruszcz",
+    "restaurantId": "delta-kebab",
+    "name": "Pruszcz Gdański",
+    "city": "Gdynia",
+    "address": "ul. Demo 3, Gdynia, Polska",
+    "phone": "+48 500 000 002",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "gdynia",
+    "restaurantId": "delta-kebab",
+    "name": "Gdynia",
+    "city": "Sopot",
+    "address": "ul. Demo 4, Sopot, Polska",
+    "phone": "+48 500 000 003",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "sopot",
+    "restaurantId": "delta-kebab",
+    "name": "Sopot",
+    "city": "Tczew",
+    "address": "ul. Demo 5, Tczew, Polska",
+    "phone": "+48 500 000 004",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "tczew",
+    "restaurantId": "delta-kebab",
+    "name": "Tczew",
+    "city": "Rumia",
+    "address": "ul. Demo 6, Rumia, Polska",
+    "phone": "+48 500 000 005",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "rumia",
+    "restaurantId": "delta-kebab",
+    "name": "Rumia",
+    "city": "Wejherowo",
+    "address": "ul. Demo 7, Wejherowo, Polska",
+    "phone": "+48 500 000 006",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "wejherowo",
+    "restaurantId": "delta-kebab",
+    "name": "Wejherowo",
+    "city": "Żukowo",
+    "address": "ul. Demo 8, Żukowo, Polska",
+    "phone": "+48 500 000 007",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "zukowo",
+    "restaurantId": "delta-kebab",
+    "name": "Żukowo",
+    "city": "Kartuzy",
+    "address": "ul. Demo 9, Kartuzy, Polska",
+    "phone": "+48 500 000 008",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  },
+  {
+    "id": "kartuzy",
+    "restaurantId": "delta-kebab",
+    "name": "Kartuzy",
+    "city": "Starogard Gdański",
+    "address": "ul. Demo 10, Starogard Gdański, Polska",
+    "phone": "+48 500 000 009",
+    "logoUrl": "",
+    "coverUrl": "",
+    "hours": {
+      "open": "10:00",
+      "close": "22:00"
+    },
+    "available": true
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "name": "deltakebab-professional-json-backend",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "seed": "node scripts/seed.js",
+    "loadtest": "node scripts/loadtest.js",
+    "db:init": "node scripts/init-db.js",
+    "db:migrate": "node scripts/migrate-json.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.5.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "socket.io": "^4.8.1",
+    "zod": "^3.24.1",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.20.0"
+  }
+}

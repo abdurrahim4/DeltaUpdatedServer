@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "kowale-p1",
+    "branchId": "kowale",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 18,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "kowale-p2",
+    "branchId": "kowale",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "kowale-p3",
+    "branchId": "kowale",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "kowale-p4",
+    "branchId": "kowale",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "kowale-p5",
+    "branchId": "kowale",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 21,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "kowale-p6",
+    "branchId": "kowale",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 25,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "kowale-p7",
+    "branchId": "kowale",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 32,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "gdansk-p1",
+    "branchId": "gdansk",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "gdansk-p2",
+    "branchId": "gdansk",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 22,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "gdansk-p3",
+    "branchId": "gdansk",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": false,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "gdansk-p4",
+    "branchId": "gdansk",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 28,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "gdansk-p5",
+    "branchId": "gdansk",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 23,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "gdansk-p6",
+    "branchId": "gdansk",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 27,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "gdansk-p7",
+    "branchId": "gdansk",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 34,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "pruszcz-p1",
+    "branchId": "pruszcz",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 22,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "pruszcz-p2",
+    "branchId": "pruszcz",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "pruszcz-p3",
+    "branchId": "pruszcz",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 28,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "pruszcz-p4",
+    "branchId": "pruszcz",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 30,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "pruszcz-p5",
+    "branchId": "pruszcz",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 25,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "pruszcz-p6",
+    "branchId": "pruszcz",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 29,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "pruszcz-p7",
+    "branchId": "pruszcz",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 36,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "gdynia-p1",
+    "branchId": "gdynia",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "gdynia-p2",
+    "branchId": "gdynia",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "gdynia-p3",
+    "branchId": "gdynia",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 30,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "gdynia-p4",
+    "branchId": "gdynia",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 32,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "gdynia-p5",
+    "branchId": "gdynia",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 27,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "gdynia-p6",
+    "branchId": "gdynia",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 31,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "gdynia-p7",
+    "branchId": "gdynia",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 38,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "sopot-p1",
+    "branchId": "sopot",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 18,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "sopot-p2",
+    "branchId": "sopot",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "sopot-p3",
+    "branchId": "sopot",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": false,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "sopot-p4",
+    "branchId": "sopot",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "sopot-p5",
+    "branchId": "sopot",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 21,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "sopot-p6",
+    "branchId": "sopot",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 25,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "sopot-p7",
+    "branchId": "sopot",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 32,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "tczew-p1",
+    "branchId": "tczew",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "tczew-p2",
+    "branchId": "tczew",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 22,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "tczew-p3",
+    "branchId": "tczew",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "tczew-p4",
+    "branchId": "tczew",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 28,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "tczew-p5",
+    "branchId": "tczew",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 23,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "tczew-p6",
+    "branchId": "tczew",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 27,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "tczew-p7",
+    "branchId": "tczew",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 34,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "rumia-p1",
+    "branchId": "rumia",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 22,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "rumia-p2",
+    "branchId": "rumia",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "rumia-p3",
+    "branchId": "rumia",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 28,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "rumia-p4",
+    "branchId": "rumia",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 30,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "rumia-p5",
+    "branchId": "rumia",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 25,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "rumia-p6",
+    "branchId": "rumia",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 29,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "rumia-p7",
+    "branchId": "rumia",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 36,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "wejherowo-p1",
+    "branchId": "wejherowo",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "wejherowo-p2",
+    "branchId": "wejherowo",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "wejherowo-p3",
+    "branchId": "wejherowo",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 30,
+    "currency": "PLN",
+    "available": false,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "wejherowo-p4",
+    "branchId": "wejherowo",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 32,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "wejherowo-p5",
+    "branchId": "wejherowo",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 27,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "wejherowo-p6",
+    "branchId": "wejherowo",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 31,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "wejherowo-p7",
+    "branchId": "wejherowo",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 38,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "zukowo-p1",
+    "branchId": "zukowo",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 18,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "zukowo-p2",
+    "branchId": "zukowo",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "zukowo-p3",
+    "branchId": "zukowo",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 24,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "zukowo-p4",
+    "branchId": "zukowo",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "zukowo-p5",
+    "branchId": "zukowo",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 21,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "zukowo-p6",
+    "branchId": "zukowo",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 25,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "zukowo-p7",
+    "branchId": "zukowo",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 32,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  },
+  {
+    "id": "kartuzy-p1",
+    "branchId": "kartuzy",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Delta Rollo",
+      "en": "Delta Rollo",
+      "uk": "Delta Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 20,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 0
+  },
+  {
+    "id": "kartuzy-p2",
+    "branchId": "kartuzy",
+    "categoryId": "rollo",
+    "name": {
+      "pl": "Cheese Rollo",
+      "en": "Cheese Rollo",
+      "uk": "Cheese Rollo"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 22,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 1
+  },
+  {
+    "id": "kartuzy-p3",
+    "branchId": "kartuzy",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Chicken Kebab",
+      "en": "Chicken Kebab",
+      "uk": "Chicken Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 26,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 2
+  },
+  {
+    "id": "kartuzy-p4",
+    "branchId": "kartuzy",
+    "categoryId": "kebab",
+    "name": {
+      "pl": "Beef Kebab",
+      "en": "Beef Kebab",
+      "uk": "Beef Kebab"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 28,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 3
+  },
+  {
+    "id": "kartuzy-p5",
+    "branchId": "kartuzy",
+    "categoryId": "vege",
+    "name": {
+      "pl": "Falafel Wrap",
+      "en": "Falafel Wrap",
+      "uk": "Falafel Wrap"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 23,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 4
+  },
+  {
+    "id": "kartuzy-p6",
+    "branchId": "kartuzy",
+    "categoryId": "box",
+    "name": {
+      "pl": "Kebab Box",
+      "en": "Kebab Box",
+      "uk": "Kebab Box"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 27,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 5
+  },
+  {
+    "id": "kartuzy-p7",
+    "branchId": "kartuzy",
+    "categoryId": "plate",
+    "name": {
+      "pl": "Kebab Plate",
+      "en": "Kebab Plate",
+      "uk": "Kebab Plate"
+    },
+    "description": {
+      "pl": "Świeżo przygotowywane na zamówienie",
+      "en": "Freshly made to order",
+      "uk": "Приготовано на замовлення"
+    },
+    "price": 34,
+    "currency": "PLN",
+    "available": true,
+    "archived": false,
+    "imageUrl": "",
+    "customizationGroupIds": [
+      "size",
+      "meat",
+      "sauce",
+      "extras"
+    ],
+    "sortOrder": 6
+  }
+]

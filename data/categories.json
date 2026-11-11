@@ -1,0 +1,42 @@
+[
+  {
+    "id": "rollo",
+    "name": {
+      "pl": "Rollo",
+      "en": "Rollo"
+    },
+    "sortOrder": 0
+  },
+  {
+    "id": "kebab",
+    "name": {
+      "pl": "Kebab",
+      "en": "Kebab"
+    },
+    "sortOrder": 1
+  },
+  {
+    "id": "vege",
+    "name": {
+      "pl": "Vege",
+      "en": "Vege"
+    },
+    "sortOrder": 2
+  },
+  {
+    "id": "box",
+    "name": {
+      "pl": "Box",
+      "en": "Box"
+    },
+    "sortOrder": 3
+  },
+  {
+    "id": "plate",
+    "name": {
+      "pl": "Plate",
+      "en": "Plate"
+    },
+    "sortOrder": 4
+  }
+]
